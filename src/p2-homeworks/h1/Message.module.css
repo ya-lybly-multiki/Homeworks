@@ -1,0 +1,52 @@
+.message {
+    background-image: url("https://itzine.ru/wp-content/uploads/2020/03/blokirovka-telegram-hronika-01.png");
+    width: 46%;
+    background-size: contain;
+    display: flex;
+    padding: 10px;
+
+}
+
+.message p {
+    margin: 0;
+}
+
+.message img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.message__container {
+    background-color: green;
+    width: 30%;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+    position:relative;
+    box-shadow: 1px 1px 10px #C0C0C0;
+}
+
+.message__container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 96%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, green 51%) no-repeat right bottom;
+}
+
+.message__name {
+    font-weight: bold;
+    color: #d09ed0;
+}
+
+.message__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message__content p {
+    color: white;
+}

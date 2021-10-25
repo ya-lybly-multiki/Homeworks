@@ -1,0 +1,27 @@
+.someClass {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+
+.btn {
+    width: 32%;
+}
+
+.spanClass {
+    color: white;
+    font-size: 20px;
+}
+
+.btnContainer {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    background-color: aqua;
+}
