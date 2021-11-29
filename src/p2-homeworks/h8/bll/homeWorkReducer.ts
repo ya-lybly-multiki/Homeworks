@@ -1,13 +1,23 @@
-export const homeWorkReducer = (state: any, action: any): any => { // need to fix any
+import {InitPeople} from "../HW8";
+
+export const homeWorkReducer = (state: InitPeople, action: GlobalType): InitPeople => { // need to fix any
     switch (action.type) {
         case 'sort': {
-            // need to fix
-            return state
+                let newState = [...state]
+                newState.sort((a, b) => a.name > b.name ? 1 : -1)
+            return action.payload === "up" ? newState : newState.reverse()
+
         }
         case 'check': {
-            // need to fix
-            return state
+            return state.filter(f => f.age > action.payload)
         }
-        default: return state
+        default:
+            return state
     }
 }
+
+
+export type GlobalType = {type:"sort", payload: "up" | "down"}
+    | {type:"check", payload:number}
+
+

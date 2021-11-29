@@ -1,0 +1,22 @@
+.EditableSpan {
+position: relative;
+    top: 20px;
+    left: 42px;
+}
+
+.EditableSpan:after {
+    content: "";
+    position: absolute;
+    background-image: url(pencil.jpg) ;
+    width:30px;
+    height:30px;
+    display: block;
+    background-size: cover;
+    background-color: transparent;
+    left: -34px;
+    top: 5px;
+}
+
+.spanWrapper {
+    margin-bottom: 2%;
+}
